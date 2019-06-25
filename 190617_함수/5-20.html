@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>충돌발생과 그 해결(내부함수)</title>
+    <script>
+        /*윤씨가 만든 함수*/
+        //제곱을 구하는 함수
+        function square(x) {
+            return x * x;
+        }
+        //피타고라스의 정리(빗변구하기)에 제곱을 구하는 함수 - square를 사용함
+        function pythagoras(width, height) {
+            return Math.sqrt(square(width) + square(height));
+        }
+        //가로값3, 높이값4(argument)일때의 결과를 출력한다.
+        alert(pythagoras(3, 4));
+
+        /*연씨가 만든 함수*/
+        //삼각형이 직각인지 확인하는 함수
+        function square(width, height, hypotenuse) {
+            if (width * width + height * height == hypotenuse * hypotenuse) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
